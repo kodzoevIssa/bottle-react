@@ -1,38 +1,251 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(0, 141, 0);
+}
+.table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./img/background.jpg);
+  width: 850px;
+  height: 750px;
+  border-radius: 50%;
+}
+.kissImage {
+  width: 300px;
+  height: 300px;
+}
+.players {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  user-select: none;
+  transition: transform 2s ease-out, width 2s ease-out, height 2s ease-out;
+  position: absolute;
+}
+
+.players.move-center {
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%) scale(1.5);
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
+.players.move-center.previous {
+  transform: translate(-60%, -50%) scale(1.5);
+}
+
+.players.move-center.active {
+  transform: translate(60%, -50%) scale(1.5);
+}
+
+.players.active {
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 1);
+  border: 0px solid gold;
+  z-index: 10;
+}
+
+.kiss-animation {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 200px;
+  height: 200px;
+  animation: showKiss 2s ease-in-out forwards;
+  z-index: 20;
+}
+
+@keyframes showKiss {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.bottle {
+  width: 100px;
+  transition: transform 0.2s ease-in-out 0s;
+  position: relative;
+  left: 47%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: auto;
+  user-select: none;
+}
+
+.kiss {
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+}
+.start {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 200px;
+  height: 80px;
+  background-color: rgb(72, 205, 74);
+  border: 3px solid rgb(1, 63, 1);
+  border-radius: 10px;
+  font-size: 32px;
   text-align: center;
+  user-select: none;
+  transition: 0.1s ease;
+}
+.stop {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 200px;
+  height: 80px;
+  background-color: rgb(72, 205, 74);
+  border: 3px solid rgb(1, 63, 1);
+  border-radius: 10px;
+  font-size: 32px;
+  text-align: center;
+  user-select: none;
+  transition: 0.1s ease;
+}
+.counter {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 194px;
+  height: 80px;
+  background-color: rgb(72, 205, 74);
+  border: 3px solid rgb(1, 63, 1);
+  border-radius: 10px;
+  font-size: 60px;
+  text-align: center;
+  user-select: none;
+  transition: 0.1s ease;
+}
+.stop:active {
+  width: 202px;
+  height: 82px;
+  background-color: rgb(98, 228, 101);
+}
+.spin {
+  position: absolute;
+  left: 46%;
+  top: 36%;
+  animation: spin 4s ease-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timer {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: red;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 1000px) {
+  .players {
+    width: 100px;
+    height: 100px;
+  }
+  .bottle {
+    width: 100px;
+    width: 40px;
+    height: auto;
+  }
+  .table {
+    width: 650px;
+    height: 550px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1000px) {
+  .players {
+    width: 100px;
+    height: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .bottle {
+    width: 100px;
+    width: 40px;
+    height: auto;
+  }
+  .table {
+    width: 650px;
+    height: 550px;
+  }
+}
+@media (max-width: 780px) {
+  .players {
+    width: 80px;
+    height: 80px;
+  }
+  .bottle {
+    width: 30px;
+    height: auto;
+  }
+  .table {
+    width: 570px;
+    height: 470px;
+  }
+}
+@media (max-width: 700px) {
+  .players {
+    width: 80px;
+    height: 80px;
+  }
+  .bottle {
+    width: 30px;
+    height: auto;
+  }
+  .table {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media (max-width: 510px) {
+  .players {
+    width: 60px;
+    height: 60px;
+  }
+  .bottle {
+    width: 20px;
+    height: auto;
+  }
+  .table {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .players {
+    width: 40px;
+    height: 40px;
+  }
+  .bottle {
+    width: 16px;
+    height: auto;
+  }
+  .table {
+    width: 300px;
+    height: 220px;
   }
 }
