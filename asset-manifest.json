@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/bottle-react/static/css/main.f457c75d.css",
+    "main.js": "/bottle-react/static/js/main.032699c7.js",
+    "static/media/Regular face 3.png": "/bottle-react/static/media/Regular face 3.ee6d1c9db2c871d25561.png",
+    "static/media/Regular face 5.png": "/bottle-react/static/media/Regular face 5.167a95c50b8cbba425e3.png",
+    "static/media/Regular face 7.png": "/bottle-react/static/media/Regular face 7.d17d66a12c6f0da35867.png",
+    "static/media/Kiss.png": "/bottle-react/static/media/Kiss.b065b2ed7a1858158359.png",
+    "static/media/Regular face 4.png": "/bottle-react/static/media/Regular face 4.6159300e9b9131fc1a13.png",
+    "static/media/Regular face 1.png": "/bottle-react/static/media/Regular face 1.d87fde7f067ddd9fa05a.png",
+    "static/media/background.jpg": "/bottle-react/static/media/background.7ae0a65b43a437a484dc.jpg",
+    "static/media/Regular face 8.png": "/bottle-react/static/media/Regular face 8.906c98fd7cede04d52c8.png",
+    "static/media/Regular face 2.png": "/bottle-react/static/media/Regular face 2.d99fa279c1caa0c27fa3.png",
+    "static/media/Regular face 9.png": "/bottle-react/static/media/Regular face 9.f2e38c965d69bef65dfb.png",
+    "static/media/Regular face 10.png": "/bottle-react/static/media/Regular face 10.effb3064719f19098c9b.png",
+    "static/media/Regular face 6.png": "/bottle-react/static/media/Regular face 6.520ddda3962fde975233.png",
+    "static/media/Kiss.mp3": "/bottle-react/static/media/Kiss.45b99ba74c1b8a333bcb.mp3",
+    "static/media/Bottle.png": "/bottle-react/static/media/Bottle.dc14a4c415cf300462e8.png",
+    "static/media/Spin.mp3": "/bottle-react/static/media/Spin.f86c6a02c74a0155c620.mp3",
+    "index.html": "/bottle-react/index.html",
+    "main.f457c75d.css.map": "/bottle-react/static/css/main.f457c75d.css.map",
+    "main.032699c7.js.map": "/bottle-react/static/js/main.032699c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f457c75d.css",
+    "static/js/main.032699c7.js"
+  ]
+}
